@@ -1,0 +1,239 @@
+.home-page {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #a98467;
+  display: flex;
+}
+
+/******* Handle the left side *******/
+.left-side {
+  flex: 0.3;
+}
+
+.left-side .friends {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.left-side .friends::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+}
+
+.left-side .friends::-webkit-scrollbar-thumb {
+  background-color: #e9edc9;
+  border-radius: 10px;
+}
+
+.left-side .friends .friend {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: #f0ead2;
+  border-radius: 10px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.left-side .friends .friend img {
+  height: 4rem;
+}
+
+.left-side .friends .friend p {
+  margin-left: 10px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.left-side .friends .friend.firendSelected {
+  background-color: #ccd5ae;
+}
+/*************/
+.left-side .profile-section {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.left-side .profile-section img {
+  height: 6rem;
+}
+
+.left-side .profile-section p {
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin-left: 15px;
+  color: #f0ead2;
+}
+/******* Handle the right side *******/
+
+.right-side {
+  flex: 0.7;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-side header {
+  background-color: #f0ead2;
+  border-radius: 7px;
+  height: 4rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+}
+
+.right-side header div {
+  display: flex;
+  align-items: center;
+}
+
+.right-side header div img {
+  height: 3rem;
+}
+
+.right-side header div p {
+  margin-left: 10px;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.right-side header button {
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #ccd5ae;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  transition: 0.3s ease-in-out;
+}
+
+.right-side header button:hover {
+  background-color: #a98467;
+}
+
+.right-side section {
+  flex: 1;
+  background-image: url("https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg");
+  background-position: center;
+  background-size: contain;
+  border-radius: 10px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+.right-side section::-webkit-scrollbar {
+  background-color: transparent;
+  width: 10px;
+  border-radius: 10px;
+}
+
+.right-side section::-webkit-scrollbar-thumb {
+  background-color: #a98467;
+  border-radius: 10px;
+}
+
+.right-side section .message-box {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.right-side section .message-box .msg {
+  border-radius: 10px;
+  padding: 7px 15px;
+  background-color: #ccd5ae;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.right-side section .message-box.sent-box {
+  justify-content: flex-end;
+}
+
+.right-side section .message-box .msg.msg-sent {
+  background-color: gray;
+  color: white;
+}
+
+.right-side section .scroll-down-box {
+  width: 100%;
+  height: 2rem;
+}
+/***********************/
+
+.right-side footer {
+  position: relative;
+  margin-top: 10px;
+  background-color: #f0ead2;
+  border-radius: 7px;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.right-side footer div {
+  width: 90%;
+}
+
+.right-side footer div button {
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  border: 2px solid #a98467;
+  background-color: #a98467;
+  font-size: 1.2em;
+  color: #f0ead2;
+}
+
+.right-side footer div input {
+  margin-left: 15px;
+  width: 90%;
+  height: 2.5rem;
+  padding: 7px 15px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: #a98467;
+  font-size: 1em;
+  font-weight: 600;
+  color: #f0ead2;
+}
+
+.right-side footer button {
+  cursor: pointer;
+  background-color: #a98467;
+  height: 2.5rem;
+  width: 5rem;
+  border-radius: 10px;
+  border: 2px solid #a98467;
+  color: #f0ead2;
+  font-size: 1em;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.right-side footer button:hover {
+  background-color: transparent;
+  color: #a98467;
+}
