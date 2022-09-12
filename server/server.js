@@ -24,7 +24,7 @@ const server = createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://meet-mate.netlify.app",
+    origin: "http://localhost:3000",
     credentials: true,
   },
 });
@@ -37,7 +37,7 @@ app.use(express.json({ limit: "5mb", extended: true }));
 app.use(express.urlencoded({ limit: "5mb", extended: true }));
 app.use(
   cors({
-    origin: "https://meet-mate.netlify.app",
+    origin: "http://localhost:3000",
     credentials: true,
   })
 );

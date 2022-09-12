@@ -3,7 +3,7 @@ import axios from "axios";
 axios.defaults.withCredentials = true;
 
 const instance = axios.create({
-  baseURL: "https://portfolio-chat-web-app.herokuapp.com/api",
+  baseURL: "http://localhost:3001/api",
 });
 
 export default instance;
